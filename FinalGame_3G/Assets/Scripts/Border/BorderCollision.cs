@@ -5,9 +5,10 @@ using Debug = UnityEngine.Debug;
 
 public class BorderCollision : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision){
-        if (collision.gameObject.CompareTag("Player")){
-            Debug.Log("Me han chocado");
-        }   
+    private void OnTriggerEnter2D(Collider2D collision){
+        if (collision.transform.root.gameObject.CompareTag("Player")){
+            Destroy(collision.transform.root.gameObject);
+            Debug.Log("Has perdido la partida - Reinicia el juego");
+        }
     }
 }
