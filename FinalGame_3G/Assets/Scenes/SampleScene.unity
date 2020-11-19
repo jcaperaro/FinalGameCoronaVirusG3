@@ -290,6 +290,8 @@ GameObject:
   - component: {fileID: 685751005}
   - component: {fileID: 685751007}
   - component: {fileID: 685751006}
+  - component: {fileID: 685751008}
+  - component: {fileID: 685751009}
   m_Layer: 0
   m_Name: Border
   m_TagString: Untagged
@@ -1721,6 +1723,40 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!68 &685751008
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685751004}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -9.758895, y: -8.21867}
+  - {x: 40.79346, y: -8.308864}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!114 &685751009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685751004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e185a2a5e2cc5ee429038ae04d6fd991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1131354972
 GameObject:
   m_ObjectHideFlags: 0
@@ -1738,7 +1774,7 @@ GameObject:
   - component: {fileID: 1131354979}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
