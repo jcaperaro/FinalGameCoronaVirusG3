@@ -75,20 +75,6 @@ public class Player_Movement : MonoBehaviour
 
         //Debug.Log(RBplayer.velocity.x); //observo la velocidad
 
-        /*
-        //alternativa para limitar la velocidad maxima
-
-        if (RBplayer.velocity.x > maxSpeedPlayer)
-        {
-            RBplayer.velocity = new Vector2(maxSpeedPlayer, RBplayer.velocity.y);
-        }
-
-        if (RBplayer.velocity.x < -maxSpeedPlayer)
-        {
-            RBplayer.velocity = new Vector2(-maxSpeedPlayer, RBplayer.velocity.y);
-        }
-        */
-
         //cambio la orientacion del gameobject
         if (horizontalMovement > 0.01f)
         {
