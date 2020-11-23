@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Unity.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player_Movement : MonoBehaviour
 {
@@ -102,7 +103,7 @@ public class Player_Movement : MonoBehaviour
     // restablecer el jugador a su posicion inicial
     void OnBecameInvisible()
     {
-        transform.position = new Vector3(-1f,0,0);
+        RestartGameOutCameraFocus();
     }
 
     // saltar cuando se elimina un enemigo
@@ -138,6 +139,11 @@ public class Player_Movement : MonoBehaviour
         movementPlayer = true;
         // cambiamos el color del gameobject al predeterminado
         SRPlayer.color = Color.white;
+    }
+
+    private void RestartGameOutCameraFocus()
+    {
+        SceneManager.LoadScene(0);
     }
 
 

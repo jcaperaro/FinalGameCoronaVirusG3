@@ -9,12 +9,11 @@ public class Enemy : MonoBehaviour{
         if (collision.transform.root.gameObject.CompareTag("Player"))
         {
             Destroy(collision.gameObject);
-            RestartGame();
-
+            RestartGameAfterEnemyKillPlayer();
         }
     }
 
-    public void RestartGame()
+    public void RestartGameAfterEnemyKillPlayer()
     {
         SceneManager.LoadScene(0);
     }
