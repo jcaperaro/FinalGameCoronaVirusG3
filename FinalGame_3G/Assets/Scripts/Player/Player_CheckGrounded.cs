@@ -9,6 +9,7 @@ public class Player_CheckGrounded : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //llamo la clase Player_Movement, para acceder a sus atributos.
         player = GetComponent<Player_Movement>();
     }
 
