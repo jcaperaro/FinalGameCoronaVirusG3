@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Debug = UnityEngine.Debug;
 
 /*Script que permite que la (banderira - Flag) de la meta, tenga un Trigger, que detecte que cuando la toque el personaje (Player), muestra en consola un
@@ -9,6 +10,9 @@ using Debug = UnityEngine.Debug;
 public class Flag : MonoBehaviour{
     private void OnTriggerEnter2D(Collider2D collision){
         if (collision.transform.root.gameObject.CompareTag("Player")){
+
+            SceneManager.LoadScene(1);
+
             Debug.Log("Has Ganado Este Nivel - Felicitaciones");
         }
     }
