@@ -11,6 +11,7 @@ public class Flag : MonoBehaviour{
     private void OnTriggerEnter2D(Collider2D collision){
         if (collision.transform.root.gameObject.CompareTag("Player")){
 
+            //Avanza al siguiente nivel
             SceneManager.LoadScene(1);
 
             Debug.Log("Has Ganado Este Nivel - Felicitaciones");
