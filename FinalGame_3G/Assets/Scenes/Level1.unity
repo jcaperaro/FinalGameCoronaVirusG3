@@ -453,6 +453,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03e6735fe21e17b49afff607c505660f, type: 3}
+--- !u!1 &616515306
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 616515308}
+  - component: {fileID: 616515307}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &616515307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616515306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4a2c1800e560754191af0b1911afb93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _firstMusicSourceIsPlaying: 0
+--- !u!4 &616515308
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616515306}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.796692, y: -3.0833774, z: -870.763}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &685751004
 GameObject:
   m_ObjectHideFlags: 0
@@ -4594,6 +4638,7 @@ GameObject:
   - component: {fileID: 2019581168}
   - component: {fileID: 2019581167}
   - component: {fileID: 2019581170}
+  - component: {fileID: 2019581171}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4679,6 +4724,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followObjectTarget: {fileID: 1131354972}
+--- !u!114 &2019581171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019581166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb115b540a290724199d927ff65cdc13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfx: {fileID: 8300000, guid: 143d4c2fd36f21e499cf700241f65483, type: 3}
+  music1: {fileID: 8300000, guid: c12beeb9dafe74d4c9e9ae4ccc1654c0, type: 3}
+  music2: {fileID: 8300000, guid: d50f20e548c8d8241beb1a0c33e1afba, type: 3}
 --- !u!1 &2031807914
 GameObject:
   m_ObjectHideFlags: 0
