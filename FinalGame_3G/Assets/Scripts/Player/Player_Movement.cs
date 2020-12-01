@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Unity.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Audio;
 using Debug = UnityEngine.Debug;
 
 public class Player_Movement : MonoBehaviour
@@ -23,7 +22,6 @@ public class Player_Movement : MonoBehaviour
 
     private bool movementPlayer = true; //para validar si el player fue golpeado por un enemigo
     private SpriteRenderer SRPlayer; //para guardar el SR del jugador
-    //public AudioSource soundDeath;
 
     void Start()
     {
@@ -149,11 +147,4 @@ public class Player_Movement : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.transform.root.gameObject.CompareTag("Enemy"))
-        {
-            
-        }
-    }
 }

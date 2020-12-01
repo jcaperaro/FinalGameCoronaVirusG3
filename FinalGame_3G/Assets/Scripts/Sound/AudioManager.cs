@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// <<< OJO >>> Este archivo (CS) no está asociado a nada, entonces nada de estos códigos se estan usando
-
 public class AudioManager : MonoBehaviour
 {
     #region Static Instances
@@ -40,8 +38,6 @@ public class AudioManager : MonoBehaviour
     }
 
    
-
-
 
 
     public void PlaySFX(AudioClip clip)

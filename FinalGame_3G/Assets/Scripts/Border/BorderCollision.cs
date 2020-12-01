@@ -14,14 +14,14 @@ public class BorderCollision : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision){
         if (collision.transform.root.gameObject.CompareTag("Player")){
             sound.Play();
-            Destroy(collision.transform.root.gameObject);
-            RestartGameAfterFall();
+            Destroy(collision.transform.root.gameObject, 2f);
+            //RestartGameAfterFall();
             Debug.Log("Has perdido la partida - Reinicia el juego");
         }
     }
 
     public void RestartGameAfterFall()
     {
-        SceneManager.LoadScene(0);
+        //SceneManager.LoadScene(0);
     }
 }
