@@ -14,8 +14,14 @@ public class Flag : MonoBehaviour{
         if (collision.transform.root.gameObject.CompareTag("Player")){
             sound.Play();
             //Avanza al siguiente nivel
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene("Level2");
+            //loadSceneOwn();
             Debug.Log("Has Ganado Este Nivel - Felicitaciones");
         }
     }
+
+   /* private void loadSceneOwn(){
+        SceneManager.LoadScene("Level2");
+        Debug.Log("Hemos ingresado a la funcion de carga de escena");
+    }*/
 }
