@@ -14,8 +14,9 @@ public class Flag : MonoBehaviour{
         if (collision.transform.root.gameObject.CompareTag("Player")){
             sound.Play();
             //Avanza al siguiente nivel
-            SceneManager.LoadScene("Level2");
+            SceneManager.LoadScene("Level2", LoadSceneMode.Single);
             //loadSceneOwn();
+            //Application.LoadLevel("Level2");
             Debug.Log("Has Ganado Este Nivel - Felicitaciones");
         }
     }
